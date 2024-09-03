@@ -6,7 +6,7 @@ let winMood = false;
 
 let open=setTimeout(function openHTMLFile() {
     let url = "game.html";
-    window.open(url, "_blank");
+    window.open(url, "_top");
  }
  ,3000);
 function setTurn() {
