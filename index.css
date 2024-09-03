@@ -9,8 +9,8 @@ body{
 }
 .game-board
 { 
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 	margin: 40px auto;
   color: #f8d2ca
   ;
@@ -40,7 +40,7 @@ body{
 }
 .header{
     margin: auto;
-    width:300px;
+    width:200px;
     height: 50px;
     border: 10px solid #333f58;
     background-color:#ee8695 ;
@@ -67,4 +67,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0px;
+    padding: 0px;
 }
