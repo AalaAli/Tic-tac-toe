@@ -5,7 +5,7 @@
 body{
     background-color:#292831;
     font-family: "coolfont";
-   padding: 10px;
+     padding: 10px;
 }
 .game-board
 { 
@@ -69,4 +69,12 @@ padding: 2px;
     align-items: center;
     margin: 10px 0px;
     padding: 0px;
+}
+
+.image{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
 }

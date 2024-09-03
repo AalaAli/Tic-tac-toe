@@ -4,7 +4,11 @@ let divarr = []
 let head = document.getElementById('header');
 let winMood = false;
 
-
+let open=setTimeout(function openHTMLFile() {
+    let url = "game.html";
+    window.open(url, "_blank");
+ }
+ ,4000);
 function setTurn() {
     if (xturn === true) {
         xturn = false;
@@ -69,6 +73,7 @@ function checkWinner() {
     else if (divarr[1] == divarr[4] && divarr[4] == divarr[7] && divarr[1] != '') {
         if (divarr[1] == 'X') {
             head.innerHTML = 'X WON!';
+            
         }
         else {
             head.innerHTML = 'O WON!';
@@ -148,3 +153,4 @@ function stopGame()
 {
     document.getElementById('restart').innerHTML = '<button onclick=restart()> RESTART</button>'
 }
+clearTimeout(open);
