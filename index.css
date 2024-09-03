@@ -5,16 +5,17 @@
 body{
     background-color:#292831;
     font-family: "coolfont";
-
+   padding: 10px;
 }
 .game-board
 { 
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 	margin: 40px auto;
-  color: #fff;
-  border: 6px solid #4a2480;
-  background-color: #4a2480;
+  color: #f8d2ca
+  ;
+  border: 6px solid #333f58;
+  background-color: #333f58;
 	border-radius: 4px;
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
@@ -22,20 +23,48 @@ body{
 
 .box
 {
-    text-align: center;
-  border: 6px solid #4a2480;
-  background-color: #c53a9d;
+  text-align: center;
+  border: 6px solid #333f58;
+  background-color: #ee8695;
   border-radius: 2px;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
 }
-/*
-#ff5433
-#33ff54
+.box:hover{
+    cursor: pointer;
+    background-color: #eba2ad;
+}
+.header{
+    margin: auto;
+    width:300px;
+    height: 50px;
+    border: 10px solid #333f58;
+    background-color:#ee8695 ;
+    color: #f8d2ca;
+    font-size: 2em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: 5px solid #333f58;
+    color:  #f8d2ca;
+    background-color:#ee8695 ;
+    text-align: center;
+    width: 200px ;
+   height: 50px;
+   font-size: 2em;
+   cursor: pointer;
+   font-family: "coolfont";
 
-
-*/
+}
+#restart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
