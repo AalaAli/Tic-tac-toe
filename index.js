@@ -8,7 +8,7 @@ let open=setTimeout(function openHTMLFile() {
     let url = "game.html";
     window.open(url, "_blank");
  }
- ,4000);
+ ,3000);
 function setTurn() {
     if (xturn === true) {
         xturn = false;
