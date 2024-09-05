@@ -3,6 +3,7 @@ let oturn = false;
 let divarr = []
 let head = document.getElementById('header');
 let winMood = false;
+let sound=document.querySelector('.audio');
 
 let open=setTimeout(function openHTMLFile() {
     let url = "game.html";
@@ -49,6 +50,7 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
     }
     else if (divarr[4] == divarr[5] && divarr[5] == divarr[6] && divarr[4] != '') {
         if (divarr[4] == 'X') {
@@ -59,6 +61,8 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
+
     }
     else if (divarr[7] == divarr[8] && divarr[8] == divarr[9] && divarr[7] != '') {
         if (divarr[7] == 'X') {
@@ -69,6 +73,8 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
+
     }
     else if (divarr[1] == divarr[4] && divarr[4] == divarr[7] && divarr[1] != '') {
         if (divarr[1] == 'X') {
@@ -80,6 +86,8 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
+
 
     }
     else if (divarr[2] == divarr[5] && divarr[5] == divarr[8] && divarr[2] != '') {
@@ -91,6 +99,8 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
+
 
     }
     else if (divarr[3] == divarr[6] && divarr[6] == divarr[9] && divarr[3] != '') {
@@ -102,6 +112,8 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
+
     }
     else if (divarr[7] == divarr[8] && divarr[8] == divarr[9] && divarr[7] != '') {
         if (divarr[7] == 'X') {
@@ -112,6 +124,8 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
+
 
     } else if (divarr[1] == divarr[5] && divarr[5] == divarr[9] && divarr[1] != '') {
         if (divarr[1] == 'X') {
@@ -122,6 +136,8 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
+
 
     }
     else if (divarr[3] == divarr[5] && divarr[5] == divarr[7] && divarr[3] != '') {
@@ -133,6 +149,8 @@ function checkWinner() {
         }
         stopGame();
         winMood = true;
+        sound.play();
+
 
     }
     else {
